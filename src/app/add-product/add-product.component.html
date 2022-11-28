@@ -7,36 +7,36 @@
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                 <label for="" class="form-label">Image</label>
-                <input type="file" name="" id="" class="form-control">
+                <input type="file" name="image" [(ngModel)]="image" id="" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                 <label for="" class="form-label">Title</label>
-                <input type="text" class="form-control">
+                <input name="title" [(ngModel)]="title" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                 <label for="" class="form-label">Description</label>
-                <input type="text" class="form-control">
+                <input name="description" [(ngModel)]="description" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                 <label for="" class="form-label">Rating</label>
-                <input type="text" class="form-control">
+                <input name="rating" [(ngModel)]="rating" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                 <label for="" class="form-label">Seller Name</label>
-                <input type="text" class="form-control">
+                <input name="seller" [(ngModel)]="seller" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                 <label for="" class="form-label">Quantity</label>
-                <input type="text" class="form-control">
+                <input name="quant" [(ngModel)]="quant" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                <button class="btn btn-success">Submit</button>
+                <button (click)="Product()" class="btn btn-success">Submit</button>
             </div>
         </div>
     </div>
