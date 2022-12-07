@@ -11,7 +11,7 @@ export class ViewProductComponent {
   data : any = []
 
   constructor(private api:ApiService){
-    api.fetchProduct().subscribe(
+    this.api.fetchProduct().subscribe(
       (response)=>{
         this.data=response;
       }
