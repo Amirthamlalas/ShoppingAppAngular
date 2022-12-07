@@ -6,6 +6,11 @@
         <div class="row g-3">
             <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
+                <label for="" class="form-label">Image</label>
+                <input type="file" name="image" [(ngModel)]="image" id="" class="form-control">
+            </div>
+            <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
                 <label for="" class="form-label">Product Code</label>
                 <input type="text" name="productCode" [(ngModel)]="productCode" id="" class="form-control">
             </div>
@@ -44,7 +49,7 @@
                 <label for="" class="form-label">Distributor Name</label>
                 <input name="distributorName" [(ngModel)]="distributorName" type="text" class="form-control">
             </div>
-            <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
                 <button (click)="Product()" class="btn btn-success">Submit</button>
             </div>

@@ -16,12 +16,13 @@ manudate=""
  price=""
  sellerName=""
 distributorName=""
-
+image=""
 constructor(private api:ApiService){}
 
   Product=()=>
 {
   let data:any={
+    "image":this.image,
     "productCode":this.productCode,
     "productName":this.productName,
     "manudate":this.manudate,
